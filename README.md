@@ -1,17 +1,17 @@
-#SimpleMongo
+# SimpleMongo
 
 SimpleMongo is a simple API for MongoDB, written in PHP.
 
-###How to use?
+### How to use?
 First of all, copy SimpleMongo.php into your project and fill the first 5 variables (host, port, username, password, dbName)
 Then initialize the SimpleMongo.
 
-###Initializing
+### Initializing
 ```php
 require('SimpleMongo.php');
 SimpleMongo::init();
 ```
-##All Methods
+## All Methods
 | Method | Description | Return |
 |:-----------:|:----------:|:----------:|
 | getAll($collection) | Returns all data in the collection. | array |
@@ -21,7 +21,7 @@ SimpleMongo::init();
 | add($collection, $array) | Adds new document into the collection. | void |
 | update($collection, $queryKey, $queryValue, $key, $value) | Sets $key to $value in the document whose $queryKey and $queryValue values match.  | void |
 
-###Examples
+### Examples
 ```php
 <?php
 require('SimpleMongo.php');
@@ -36,5 +36,5 @@ SimpleMongo::add("users",
 );
 ```
 
-###Contributing and issues
+### Contributing and issues
 We welcome contributions and you can create an issue to report bugs.
